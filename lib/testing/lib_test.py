@@ -1,7 +1,16 @@
 #!/usr/bin/env python3
 
-from car import Car
-from vehicle import Vehicle
+# Add the project root directory to the Python path
+import sys
+import os
+
+project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
+sys.path.insert(0, project_root)
+from lib.car import Car
+from lib.vehicle import Vehicle
+
+# from car import Car
+# from vehicle import Vehicle
 
 class TestVehicle:
     '''Class "Vehicle" in vehicle.py'''
